@@ -1,6 +1,6 @@
 <Project>
 	<PropertyGroup>
-		<VersionPrefix>0.1.0</VersionPrefix>
+		<VersionPrefix>0.2.0-beta</VersionPrefix>
 		<Authors>KJB Conseil</Authors>
 		<PackageProjectUrl>https://github.com/kjbconseil/logtoapi-dotnet-sdk</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/kjbconseil/logtoapi-dotnet-sdk</RepositoryUrl>
