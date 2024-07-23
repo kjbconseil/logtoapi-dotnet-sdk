@@ -11,7 +11,7 @@ jobs:
       matrix:
         os:
           - "ubuntu-24.04"
-          - "macos-13"
+          - "macos-14"
         dotnet-version:
           - "net8.0"
     runs-on: ${{ matrix.os }}
