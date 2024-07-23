@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logto.WebApi.Sdk", "src\Logto.WebApi.Sdk\Logto.WebApi.Sdk.csproj", "{C6C4B3B5-0CC4-4980-88DF-90FBC3ECF6FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logto.WebApi.Sdk.Tests", "src\Logto.WebApi.Sdk.Tests\Logto.WebApi.Sdk.Tests.csproj", "{F4C13CFC-E51D-4C93-9C96-C3C815CCA174}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2AAD8F33-B77E-4A12-92C8-936621C3EC50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DCF09928-E8E3-44D7-9175-3292235C5A60}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		CHANGELOG.md = CHANGELOG.md
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{7ABFDC59-8A4D-4E1C-813A-AF07C5909CF4}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflow\build.yml = .github\workflow\build.yml
+		.github\workflow\publish.yml = .github\workflow\publish.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6C4B3B5-0CC4-4980-88DF-90FBC3ECF6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C4B3B5-0CC4-4980-88DF-90FBC3ECF6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C4B3B5-0CC4-4980-88DF-90FBC3ECF6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C4B3B5-0CC4-4980-88DF-90FBC3ECF6FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C13CFC-E51D-4C93-9C96-C3C815CCA174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C13CFC-E51D-4C93-9C96-C3C815CCA174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C13CFC-E51D-4C93-9C96-C3C815CCA174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C13CFC-E51D-4C93-9C96-C3C815CCA174}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C6C4B3B5-0CC4-4980-88DF-90FBC3ECF6FA} = {2AAD8F33-B77E-4A12-92C8-936621C3EC50}
+		{F4C13CFC-E51D-4C93-9C96-C3C815CCA174} = {2AAD8F33-B77E-4A12-92C8-936621C3EC50}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {701ADD70-6BD7-4E8C-9261-460E6887DEEE}
+	EndGlobalSection
+EndGlobal

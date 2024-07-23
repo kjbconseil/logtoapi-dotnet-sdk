@@ -1,0 +1,36 @@
+<Project>
+	<PropertyGroup>
+		<VersionPrefix>0.1.0</VersionPrefix>
+		<Authors>KJB Conseil</Authors>
+		<PackageProjectUrl>https://github.com/kjbconseil/logtoapi-dotnet-sdk</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/kjbconseil/logtoapi-dotnet-sdk</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>logto;sdk;api</PackageTags>
+		<Copyright>Copyright © KJB Conseil 2024-$([System.DateTime]::UtcNow.Year)</Copyright>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>CHANGELOG.md</PackageReleaseNotes>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AssemblyInformationalVersionAttribute>$(Version)</AssemblyInformationalVersionAttribute>
+		<AssemblyCompany>$(Authors)</AssemblyCompany>
+		<AssemblyProduct>Logto API Library.</AssemblyProduct>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Deterministic>true</Deterministic>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<LangVersion>latest</LangVersion>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+</Project>
