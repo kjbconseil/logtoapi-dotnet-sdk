@@ -6,15 +6,7 @@ on:
 jobs:
   build:
     name: Build
-    timeout-minutes: 30
-    strategy:
-      matrix:
-        os:
-          - "ubuntu-24.04"
-          - "windows-2022"
-        dotnet-version:
-          - "net8.0"
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
 
@@ -27,9 +19,9 @@ jobs:
     - uses: actions/cache@v4
       with:
         path: ~/.nuget/packages
-        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+        key: nuget-${{ hashFiles('**/*.csproj') }}
         restore-keys: |
-          ${{ runner.os }}-nuget-
+          nuget-
 
     - name: Install dependencies
       run: |
@@ -37,6 +29,6 @@ jobs:
 
     - name: Build
       run: |
-        dotnet build -f ${{ matrix.dotnet-version }} --no-restore
+        dotnet build --no-restore
 
  
