@@ -1,4 +1,5 @@
 ﻿using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text;
 using System.Text.Json;
 using Logto.WebApi.Sdk.Authentication;
@@ -65,6 +66,8 @@ public abstract class ApiClient
         }
 
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _currentToken!.Value);
+        request.Headers.UserAgent.Add(new ProductInfoHeaderValue("logto-webapi-dotnet-sdk", Assembly.GetExecutingAssembly().GetName().Version?.ToString()));
+        request.Headers.UserAgent.Add(new ProductInfoHeaderValue("dotnet-version", Environment.Version.ToString()));
 
         var response = await HttpClient.SendAsync(request);
         response.EnsureSuccessStatusCode();
